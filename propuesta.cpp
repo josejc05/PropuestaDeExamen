@@ -1,17 +1,14 @@
-#include <stdio.h>
-#include <math.h>
-
+#include <iostream>
+#include <cmath>
+using namespace std;
 int main() {
-    int a, b, c;
-
-    for (a = 1; a <= 100; a++) {
-        for (b = a; b <= 100; b++) {
-            c = sqrt(a * a + b * b);
+    for (int a = 1; a <= 15; a++) {
+        for (int b = a; b <= 15; b++) {
+            int c = sqrt(a * a + b * b);
             if (a * a + b * b == c * c && a + b > c) {
-                printf("%d - %d - %d\n", a, b, c);
+                cout << a << " - " << b << " - " << c<< endl;
             }
         }
     }
-
     return 0;
 }
