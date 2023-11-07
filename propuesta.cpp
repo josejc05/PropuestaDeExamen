@@ -6,7 +6,7 @@ int main() {
     for (int a = 1; a <= 100; a++) {
         for (int b = a; b <= 100; b++) {
             int c2 = a * a + b * b;
-            int c = static_cast<int>(sqrt(c2));
+            int c = sqrt(a* a + b * b);
             if (c * c == c2 && (a + b + c <= 30)) {
                 if ((a == 3 && b == 4 && c == 5) ||
                     (a == 6 && b == 8 && c == 10) ||
