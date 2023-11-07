@@ -3,11 +3,10 @@
 using namespace std;
 
 int main() {
-    for (int a = 1; a <= 100; a++) {
-        for (int b = a; b <= 100; b++) {
-            int c2 = a * a + b * b;
+    for (int a = 1; a <= 20; a++) {
+        for (int b = a; b <= 20; b++) {
             int c = sqrt(a* a + b * b);
-            if (c * c == c2 && (a + b + c <= 30)) {
+            if (a * a + b * b == c*c && a + b > c) {
                 if ((a == 3 && b == 4 && c == 5) ||
                     (a == 6 && b == 8 && c == 10) ||
                     (a == 5 && b == 12 && c == 13) ||
